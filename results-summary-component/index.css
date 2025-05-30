@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 255, 0.119);
+    
+}
+.container{
+    display: grid;
+    align-items: center;
+    height: 90vh;
+  font-family: 'Hanken Grotesk',sans-serif;
+}
+.result-card{
+    display: flex;
+    height: 310px;
+    width:480px;
+    gap:18px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.459);
+    border-radius: 1rem;
+    margin: 0 auto;
+     background-color: white;
+}
+.result{
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.459);
+    background:linear-gradient(-180deg,rgba(72, 77, 209, 0.901),rgb(18, 1, 248));
+    height: 100%;
+    border-radius: 1rem;
+   color: rgba(245, 245, 245, 0.897);
+}
+.result .score{
+    width:100px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 90%;
+    background:linear-gradient(90deg,rgb(72, 77, 232),rgb(25, 15, 161));
+}
+.score h3{
+    font-size: 2rem;
+}
+.result-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 47%;
+   
+}
+.summary-stats{
+ display:  flex;
+ flex-direction: column;
+ gap:19px;  
+}
+
+.summary-stats-item{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-radius: 1ch;
+}
+.summary-stats-item img{
+    height: 20px;
+}
+#item-reaction{
+    background-color: rgba(255, 0, 0, 0.078);
+}
+#item-reaction >#label{
+    color: rgba(255, 0, 0, 0.459);
+}
+#item-memory{
+    background-color: rgba(194, 194, 19, 0.173);
+}
+#item-memory>#label{
+    color: rgba(129, 129, 12, 0.421);
+}
+#item-verbal{
+    background-color: rgba(0, 128, 0, 0.096);
+}
+#item-verbal>#label{
+    color:rgba(0, 128, 0, 0.475);
+}
+#item-visual{
+    background-color: rgba(0, 0, 255, 0.066);
+}
+#item-visual>#label{
+    color: rgba(0, 0, 255, 0.593);
+}
+#label{
+    font-weight: bold;
+}
+button{
+padding: 8px;
+border-radius: 2ch;
+border: none;
+background-color: rgb(43, 43, 104);
+color: white;
+}
+
+.attribution{ 
+ font-size: 11px;
+ text-align: center; 
+}
+.attribution a {
+ color: hsl(228, 45%, 44%); 
+}
