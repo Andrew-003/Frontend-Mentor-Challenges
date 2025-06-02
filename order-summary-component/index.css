@@ -67,6 +67,8 @@ body {
 }
 .change-plan-option{
  font-size: small;
+ font-weight: bold;
+ color:rgba(79, 20, 79, 0.722);
 }
 .card-footer{
  display: flex;
