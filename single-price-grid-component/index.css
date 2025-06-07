@@ -1,0 +1,109 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    max-width:36rem;
+    margin: auto;
+}
+.price-grid-component{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:10px 0px;
+    box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.33);
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+     margin: 5px;
+     font-family: 'Karl',sans-serif;
+}
+.price-grid-component header{
+    grid-column: 1/-1;
+    padding: 1rem;
+}
+
+header h2,h4{
+    margin: 2ch;
+}
+header .overview-hd{
+    font-size: 16px;
+    margin: 18px;
+}
+.title-hd{
+    color:  hsl(179, 62%, 43%);
+}
+.sub-title-hd{
+    color: hsl(71, 73%, 54%);
+}
+.sub-section{
+    color:  hsl(204, 43%, 93%);
+    background-color:hsl(179, 62%, 43%) ;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    padding: 1.2rem;
+}
+.title-sub{
+    margin-left: 5px;
+}
+.price-sub{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin: 5px;
+}
+
+.price{
+    font-size: 22px;
+}
+.price-plan{
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.overview-price{
+   margin: 5px;
+}
+.sign-up-btn{
+    padding:1.5ch;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    background-color:  hsl(71, 73%, 54%);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.419);
+    font-weight: bold;
+    color: white;
+}
+.sign-up-btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    transform: transition 0.5s;
+}
+.about-section{
+    padding: 1rem;
+    color:  hsl(204, 43%, 93%);
+    background-color:hsla(179, 59%, 47%, 0.932) ;
+}
+.about-section .overview-abt{
+    margin: 30px;
+}
+ .attribution {
+ font-size: 11px;
+ text-align: center;
+ }
+.attribution a { 
+color: hsl(228, 45%, 44%);
+ }
+ @media (max-width:700px) {
+    .price-grid-component{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+       gap:0px;
+    }
+ }
