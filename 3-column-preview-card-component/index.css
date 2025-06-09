@@ -16,6 +16,7 @@
  justify-content: space-between;
  box-shadow: 0px 0px 1px 0px black;
  min-height: 56%;
+ border-radius: 1ch;
 }
 .card{
  display: flex;
