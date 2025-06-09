@@ -1,0 +1,103 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 96vh;
+    width:50%;
+}
+.preview-card{
+ display: flex;
+ justify-content: space-between;
+ box-shadow: 0px 0px 1px 0px black;
+ min-height: 56%;
+}
+.card{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: flex-start;
+ box-shadow: 0px 0px 1px 0px black;
+ padding: 1.5rem;
+transition: transform 0.3s;
+color: white;
+}
+#sedans{
+background-color:rgb(232, 163, 36) ;
+}
+#suvs{
+    background-color: rgb(32, 165, 159);
+}
+#luxury{
+    background-color: rgb(10, 91, 64);
+}
+
+h1{
+    font-family: 'Yanone Kaffeesatz',sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-size: 26px;
+   
+}
+p{
+    font-family: 'Big Shoulder',sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.more-btn{
+    margin: 5px;
+    padding: 1.8ch 1.8ch;
+    border: 2px solid white;
+    border-radius: 6rem;
+    background-color:white;
+    font-size: 12px;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#sedans .more-btn{
+    color: rgb(232, 163, 36);
+
+}
+
+#suvs .more-btn{
+    color: rgb(32, 165, 159);
+
+}
+#luxury .more-btn{
+    color: rgb(10, 91, 64);
+
+}
+#sedans .more-btn:active,#suvs .more-btn:active,#luxury .more-btn:active{
+    color: white;
+    background-color: transparent;
+
+}
+
+
+  .attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+  .attribution a {
+   color: hsl(228, 45%, 44%);
+}
+@media (max-width:760px) {
+    .preview-card{
+        flex-wrap: wrap;
+    }
+    .card{
+        gap:10px;
+    }
+    .attribution{
+         margin: 50px;
+    }
+    
+}
