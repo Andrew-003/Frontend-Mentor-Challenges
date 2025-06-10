@@ -1,0 +1,109 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('./images/bg-desktop.svg') no-repeat;
+    background-color: rgb(102, 54, 148);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+header{
+    width:100%;
+    padding: 1rem;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+h1{
+    font-family: 'Popins',sans-serif;
+    color: white;
+}
+p{
+    font-family: 'Open Sans',sans-serif;
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap:1rem;
+}
+.content-left {
+  flex: 0 0 50%;
+}
+
+.content-left img {
+  width: 100%;
+  height: auto;
+}
+.content-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap:5rem;
+       transition: ease-in 0.3s;
+    
+}
+.content-right button{
+ padding: 1rem 2rem;
+ border: 0.1px solid white;
+ background-color: rgb(146, 50, 235);
+ color: white;
+ border-radius: 8rem;
+  font-family: 'Open Sans',sans-serif;
+}
+button:hover{
+    background-color: rgb(104, 14, 188);
+    box-shadow: 0px 5px 10px 0px black;
+    cursor: pointer;
+}
+.social-links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    gap:1ch;
+ 
+}
+small{
+      font-family: 'Open Sans',sans-serif;
+         color: white;
+         font-weight: bold;
+}
+.social-links a i {
+  padding: 2ch 1.5ch;
+  border-radius: 80%;
+  border: 1px solid white;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a i:hover {
+  color: rgb(153, 67, 234);
+  border-color: rgb(163, 83, 237);
+}
+.attribution { 
+    padding: 10px;
+    font-size: 11px;
+    text-align: center; 
+    color: rgb(43, 43, 218);
+}
+.attribution a {
+     color: hsl(228, 88%, 75%); 
+}
+@media (max-width:700px) {
+    .content{
+        flex-direction: column;
+    }
+}
