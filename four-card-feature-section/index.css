@@ -1,0 +1,99 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 98vh;
+    padding: 18ch;
+    font-family: 'Poppins',sans-serif;
+}
+.feature-intro{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.feature-motto{
+    font-weight:100;
+    color: rgba(0, 0, 0, 0.884);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,clamp(12rem,50%,18rem));
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:2ch;
+}
+.feature-card{
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+    width:clamp(12rem,100%,15rem);
+    padding: 1.5rem;
+    border-radius: 1ch;
+    background-color: white;
+}
+.feature-card h3{
+ color: rgba(0, 0, 0, 0.704);
+}
+
+p,h1,h2,h3{
+    line-height: 1.5;
+}
+.col-left .feature-card{
+ border-top: 0.5ch solid lightblue;
+}
+.col-right .feature-card{
+    border-top: 0.5ch solid rgba(30, 78, 210, 0.825);
+}
+.col-middle .feature-card{
+ margin-bottom: 1ch;
+}
+.col-middle .feature-card.one{
+     border-top: 0.5ch solid rgba(210, 30, 36, 0.822);
+}
+.col-middle .feature-card.two{
+      border-top: 0.5ch solid rgba(210, 111, 30, 0.822);
+}
+.card-body{
+    margin-bottom: 5ch;
+}
+.card-footer img{
+    display: block;
+    position: absolute;
+    right:5%;
+    bottom: 5%;
+    width:clamp(2rem,50%,3rem);
+
+}
+.attribution {
+    margin: 2rem;
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width:700px) {
+   .grid-container{
+    grid-template-columns:clamp(12rem,50%,18rem) ;
+   }
+   .attribution a{
+    font-size: smaller;
+    text-wrap: nowrap;
+   }
+   .feature-motto{
+     font-size: 1.5rem;
+     text-wrap: nowrap;
+   }
+   .feature-madeby{
+    font-size: 1rem;
+   }
+   .feature-overview{
+    font-size: small;
+   }
+}
