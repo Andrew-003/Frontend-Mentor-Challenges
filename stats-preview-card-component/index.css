@@ -71,7 +71,6 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-  
 }
 .right .overlay{
   position: absolute;
@@ -82,7 +81,6 @@ body{
   background-color: rgba(99, 14, 125, 0.818);
   opacity: 0.8;
 }
-
  .attribution { 
     position: absolute;
     left:50%;
