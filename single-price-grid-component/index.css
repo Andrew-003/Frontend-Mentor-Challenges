@@ -100,6 +100,7 @@ header .overview-hd{
 .attribution a { 
 color: hsl(228, 45%, 44%);
  }
+
  @media (max-width:700px) {
     .price-grid-component{
         grid-template-rows: 1fr;
