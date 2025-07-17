@@ -21,8 +21,8 @@ header .ratings-container{
 }
 header .content-title{
     font-size: max(1%,4.5rem);
-      color: rgb(104, 29, 73);
-      margin-left: 1rem;
+    color: rgb(104, 29, 73);
+    margin-left: 1rem;
 }
 header .content-overview{
     font-size: max(1%,1.2rem);
