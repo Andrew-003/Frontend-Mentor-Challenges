@@ -43,8 +43,8 @@ text-align: center;
 }
 .card h3{
     font-size: small;
-  font-weight: bolder;
-  color:rgba(4, 4, 110,0.8);
+    font-weight: bolder;
+    color:rgba(4, 4, 110,0.8);
 }
 .card p{
     font-size: x-small;
